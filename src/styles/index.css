@@ -1,0 +1,25 @@
+
+
+@import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;900&family=Inter:wght@200;300;400;500;600;700;900&family=Satoshi:wght@200;300;400;500;600;700;900&display=swap');
+
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('/fonts/Satoshi-Variable.woff') format('woff');
+  font-weight: 300 600 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Satoshi', 'DM Sans', 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}

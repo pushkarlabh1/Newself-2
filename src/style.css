@@ -1,0 +1,113 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom button styles */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-dm-sans text-base font-normal transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-accent-yellow text-black border border-black;
+  }
+
+  .btn-primary:hover {
+    @apply bg-yellow-200 -translate-y-0.5 shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-black border border-black;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-gray-50;
+  }
+
+  .header-btn {
+    @apply inline-flex h-10 px-6 flex-col justify-center items-center rounded-full border border-black font-dm-sans text-base font-normal transition-all duration-300;
+  }
+
+  .header-btn-primary {
+    @apply bg-accent-yellow text-black;
+  }
+
+  .header-btn-primary:hover {
+    @apply bg-yellow-200 -translate-y-0.5;
+  }
+
+  .header-btn-secondary {
+    @apply bg-white text-black;
+  }
+
+  .header-btn-secondary:hover {
+    @apply bg-gray-50;
+  }
+}
+
+@layer utilities {
+  /* Responsive pricing cards */
+  @media (max-width: 1024px) {
+    .pricing-card-image {
+      @apply w-full max-w-[456px] h-auto aspect-square;
+    }
+
+    .pricing-card-container {
+      @apply w-full max-w-[504px];
+    }
+  }
+
+  @media (max-width: 768px) {
+    .pricing-card-container {
+      @apply w-full p-4;
+    }
+
+    .pricing-card-image {
+      @apply w-full h-auto;
+    }
+  }
+}
+
+/* Responsive disclaimer section */
+@media (max-width: 1200px) {
+  .disclaimer-section {
+    @apply px-20;
+  }
+}
+
+@media (max-width: 768px) {
+  .disclaimer-section {
+    @apply px-6;
+  }
+
+  .disclaimer-text-container {
+    @apply w-full left-3 top-3;
+  }
+
+  .disclaimer-link {
+    @apply relative left-0 top-0 mt-2 block;
+  }
+}
+
+/* Comparison table responsive */
+@media (max-width: 1024px) {
+  .comparison-table-wrapper {
+    @apply overflow-x-auto;
+  }
+
+  .comparison-title {
+    @apply text-4xl;
+  }
+}
+
+@media (max-width: 768px) {
+  .comparison-title {
+    @apply text-3xl;
+  }
+
+  .comparison-subtitle {
+    @apply text-base;
+  }
+}
